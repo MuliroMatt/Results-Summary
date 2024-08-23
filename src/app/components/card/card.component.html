@@ -1,0 +1,18 @@
+<main class="main-card">
+    <section class="results">
+        <h3 class="results__title">Your Result</h3>
+        <div class="score">
+            <h1>76</h1>
+            <span>of 100</span>
+        </div>
+        <h2 class="results__quality">Great</h2>
+        <p class="results__description">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section class="summary">
+        <h3 class="summary__title">Summary</h3>
+        <div class="summary__wrapper">
+            <app-summary-item *ngFor="let item of data" [data]="item"/>
+        </div>
+        <button>Continue</button>
+    </section>
+</main>
